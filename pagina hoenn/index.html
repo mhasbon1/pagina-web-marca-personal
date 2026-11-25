@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOENN — Ideas que cobran vida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR FIJA -->
+  <header class="navbar" id="navbar">
+    <a href="#inicio" class="brand-logo" aria-label="HOENN Inicio">
+      <svg class="star-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#FFFFFF"/>
+      </svg>
+      <span class="brand-text">HO<span class="letter-e"><span></span><span></span><span></span></span>NN</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio" class="nav-item active" data-section="inicio">INICIO</a>
+      <a href="#proyectos" class="nav-item" data-section="proyectos">PROYECTOS</a>
+      <a href="#sobre-mi" class="nav-item" data-section="sobre-mi">SOBRE MI</a>
+      <a href="#contacto" class="nav-item" data-section="contacto">CONTACTO</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- MENÚ MÓVIL / OVERLAY -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-content">
+      <p class="drawer-tag">// NAVEGACIÓN</p>
+      <a href="#inicio" class="drawer-link">01 &nbsp; INICIO</a>
+      <a href="#proyectos" class="drawer-link">02 &nbsp; PROYECTOS</a>
+      <a href="#sobre-mi" class="drawer-link">03 &nbsp; SOBRE MI</a>
+      <a href="#contacto" class="drawer-link">04 &nbsp; CONTACTO</a>
+      <div class="drawer-coords">
+        <svg class="star-mini" viewBox="0 0 40 40"><path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#00A8E8"/></svg>
+        <span>7°04'44.4"N 73°07'27.3"W</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 01: INICIO (HERO) -->
+  <section id="inicio" class="section hero-section">
+    <svg class="hero-orbit-svg" viewBox="0 0 1440 820" fill="none" preserveAspectRatio="none">
+      <path d="M510 430 C 620 80, 960 60, 1080 280 C 1180 460, 1040 730, 820 790" stroke="#00A8E8" stroke-opacity="0.32" stroke-width="1.4" />
+      <path d="M895 162 L 903 162 M 899 158 L 899 166" stroke="#00A8E8" stroke-width="1.5" />
+    </svg>
+
+    <div class="container hero-container">
+      <div class="section-index">
+        <span class="idx-num">01</span>
+        <span class="idx-line"></span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="sub-label-line">
+            <span>ILUSTRACION</span>
+            <span class="thin-line"></span>
+          </div>
+
+          <div class="hero-collage-left">
+            <div class="hero-card-tilt-left">
+              <img src="assets/hero-ilustracion.webp" alt="Ilustración personaje mirando el cielo" />
+              <div class="crosshair-mark">+</div>
+            </div>
+            <div class="hero-card-cut-bottom">
+              <img src="assets/hero-detalle.jpg" alt="Detalle atmosférico" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-center">
+          <h1 class="hero-title" aria-label="HOENN">
+            <span>H</span>
+            <span class="hero-o">
+              <svg viewBox="0 0 64 46" fill="none">
+                <rect x="3" y="3" width="58" height="40" rx="18" stroke="#FFFFFF" stroke-width="5.5"/>
+                <path d="M32 9L35.2 20L46 23L35.2 26L32 37L28.8 26L18 23L28.8 20L32 9Z" fill="#FFFFFF"/>
+              </svg>
+            </span>
+            <span class="hero-e">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span>N</span>
+            <span>N</span>
+          </h1>
+
+          <p class="hero-tagline">IDEAS QUE COBRAN VIDA</p>
+
+          <div class="hero-description">
+            <p>
+              HOENN es una marca personal dedicada<br />
+              a la ilustración y creación audiovisual
+            </p>
+            <p>
+              Transformo ideas en imágenes,<br />
+              videos e historias con una identidad<br />
+              visual propia
+            </p>
+          </div>
+
+          <a href="#proyectos" class="btn-cyber">
+            <span>VER PROYECTOS</span>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="hero-right">
+          <div class="sub-label-line right-align">
+            <span class="thin-line"></span>
+            <span>VIDEO</span>
+          </div>
+
+          <div class="hero-collage-right">
+            <div class="hero-card-whale video-trigger" data-type="video" data-title="REEL AUDIOVISUAL — DEEP BLUE" data-desc="Exploración de movimiento, atmósfera submarina y diseño sonoro." data-src="assets/hero-video.webp">
+              <img src="assets/hero-video.webp" alt="Ballena en el océano profundo" />
+              <button class="play-circle-btn" aria-label="Reproducir video">
+                <svg viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="8,5 19,12 8,19"/></svg>
+              </button>
+            </div>
+
+            <div class="hero-card-landscape">
+              <img src="assets/hero-creacion.webp" alt="Paisaje conceptual" />
+            </div>
+
+            <div class="sub-label-line bottom-creacion">
+              <span class="cyan-bar"></span>
+              <span>CREACION</span>
+              <span class="cyan-bar"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footer-bar">
+        <div class="disciplines-bar">
+          <span class="cyan-bar"></span>
+          <span>ILUSTRACIÓN &nbsp;/&nbsp; VIDEO &nbsp;/&nbsp; DIRECCION VISUAL</span>
+        </div>
+
+        <div class="coords-bar">
+          <svg class="star-coords" viewBox="0 0 40 40">
+            <path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#FFFFFF"/>
+          </svg>
+          <span>7°04'44.4"N 73°07'27.3"W</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 02: PROYECTOS DESTACADOS -->
+  <section id="proyectos" class="section projects-section">
+    <div class="container">
+      <div class="section-index">
+        <span class="idx-num">02</span>
+        <span class="idx-line"></span>
+      </div>
+
+      <h2 class="section-title-dual">
+        <span class="white-line">PROYECTOS</span>
+        <span class="cyan-line">DESTACADOS</span>
+      </h2>
+
+      <p class="section-subtitle-mono">
+        IDEAS QUE COBRAN VIDA A TRAVÉS DE<br />
+        LA ILUSTRACIÓN Y EL AUDIOVISUAL
+      </p>
+
+      <div class="filter-toolbar">
+        <div class="filter-buttons" role="tablist">
+          <button class="filter-btn active" data-filter="todos">TODOS</button>
+          <span class="filter-sep">|</span>
+          <button class="filter-btn" data-filter="ilustracion">ILUSTRACION</button>
+          <span class="filter-sep">|</span>
+          <button class="filter-btn" data-filter="audiovisual">AUDIOVISUAL</button>
+          <span class="filter-sep">|</span>
+          <button class="filter-btn" data-filter="conceptos">CONCEPTOS</button>
+        </div>
+        <div class="toolbar-rule">
+          <span class="rule-line"></span>
+          <span class="rule-node"></span>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card" data-category="ilustracion" data-type="image" data-title="LEVIATÁN EN LAS NUBES" data-desc="Ilustración digital enfocada en escala monumental, iluminación atmosférica y narrativa contemplativa." data-src="assets/proyecto-1.webp">
+          <img src="assets/proyecto-1.webp" alt="Leviatán en las nubes" />
+          <div class="project-overlay">
+            <span class="project-tag">ILUSTRACIÓN</span>
+            <h3>LEVIATÁN EN LAS NUBES</h3>
+          </div>
+        </article>
+
+        <article class="project-card is-video" data-category="audiovisual" data-type="video" data-title="CRÓNICAS NOCTURNAS — REEL" data-desc="Dirección de fotografía, etalonaje azul cian y montaje audiovisual animal." data-src="assets/proyecto-2.webp">
+          <img src="assets/proyecto-2.webp" alt="Grabación nocturna en la ciudad" />
+          <button class="play-circle-btn" aria-label="Ver proyecto audiovisual">
+            <svg viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="8,5 19,12 8,19"/></svg>
+          </button>
+          <div class="project-overlay">
+            <span class="project-tag">AUDIOVISUAL</span>
+            <h3>CRÓNICAS NOCTURNAS</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="conceptos" data-type="image" data-title="HORIZONTE AZUL" data-desc="Arte conceptual de mundo abierto y exploración visual sobre arquitectura costera." data-src="assets/proyecto-3.webp">
+          <img src="assets/proyecto-3.webp" alt="Personaje observando ciudad costera" />
+          <div class="project-overlay">
+            <span class="project-tag">CONCEPTOS</span>
+            <h3>HORIZONTE AZUL</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ilustracion" data-type="image" data-title="MIRADA EN SOMBRAS" data-desc="Estudio de iluminación dramática, contraste cálido/frío y expresión de personaje." data-src="assets/proyecto-4.webp">
+          <img src="assets/proyecto-4.webp" alt="Primer plano personaje" />
+          <div class="project-overlay">
+            <span class="project-tag">ILUSTRACIÓN</span>
+            <h3>MIRADA EN SOMBRAS</h3>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="conceptos" data-type="image" data-title="ECLIPSE CARMESÍ" data-desc="Composición minimalista de alto impacto visual con paleta monocromática azul y acento solar." data-src="assets/proyecto-5.webp">
+          <img src="assets/proyecto-5.webp" alt="Silueta frente al sol rojo" />
+          <div class="project-overlay">
+            <span class="project-tag">CONCEPTOS</span>
+            <h3>ECLIPSE CARMESÍ</h3>
+          </div>
+        </article>
+
+        <article class="project-card is-video" data-category="audiovisual" data-type="video" data-title="ABISMO SONORO" data-desc="Pieza audiovisual experimental inspirada en las profundidades marinas." data-src="assets/proyecto-6.webp">
+          <img src="assets/proyecto-6.webp" alt="Ballena emergiendo en agua azul" />
+          <button class="play-circle-btn" aria-label="Ver pieza audiovisual">
+            <svg viewBox="0 0 24 24" fill="#FFFFFF"><polygon points="8,5 19,12 8,19"/></svg>
+          </button>
+          <div class="project-overlay">
+            <span class="project-tag">AUDIOVISUAL</span>
+            <h3>ABISMO SONORO</h3>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-bottom-divider">
+        <svg class="star-grey" viewBox="0 0 40 40">
+          <path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#7D8A99"/>
+        </svg>
+        <span class="divider-line"></span>
+        <span class="divider-text">ILUSTRACIÓN &nbsp;/&nbsp; VIDEO &nbsp;/&nbsp; DIRECCION VISUAL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 03: SOBRE MÍ -->
+  <section id="sobre-mi" class="section about-section">
+    <div class="container">
+      <div class="about-top-grid">
+        <div class="about-image-frame">
+          <img src="assets/sobre-mi-ballena.webp" alt="Explorador submarino junto a ballena" />
+          <div class="about-img-caption">
+            <span>// &nbsp; H O E N N</span>
+            <span class="caption-line"></span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-header-row">
+            <span class="idx-num">03</span>
+            <span class="idx-line"></span>
+            <span class="about-label">SOBRE MÍ</span>
+            <span class="white-rule"></span>
+          </div>
+
+          <p class="about-kicker">EL UNIVERSO DETRÁS DE LA MARCA</p>
+
+          <h2 class="about-headline">
+            NO NECESITAS VER<br />
+            AL CREADOR<br />
+            <span class="cyan-highlight">SOLO SENTIR SU VISIÓN</span>
+          </h2>
+
+          <p class="about-paragraph">
+            HOENN nace de la exploración visual, la ilustración y el lenguaje audiovisual. Un espacio para experimentar con imágenes, construir historias y transformar ideas en experiencias visuales con identidad propia
+          </p>
+
+          <button class="btn-cyber btn-wide" id="openManifestoBtn">
+            <span class="btn-dash"></span>
+            <span>CONOCE MÁS DE LA PERSONA DETRÁS DE TODO</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+
+        <div class="about-emblem-col">
+          <div class="hud-frame">
+            <svg class="compass-star" viewBox="0 0 100 100" fill="none">
+              <polygon points="50,6 59,41 50,50" fill="#00B4FF"/>
+              <polygon points="50,6 41,41 50,50" fill="#005B8F"/>
+              <polygon points="94,50 59,59 50,50" fill="#005B8F"/>
+              <polygon points="94,50 59,41 50,50" fill="#00B4FF"/>
+              <polygon points="50,94 41,59 50,50" fill="#00B4FF"/>
+              <polygon points="50,94 59,59 50,50" fill="#005B8F"/>
+              <polygon points="6,50 41,41 50,50" fill="#005B8F"/>
+              <polygon points="6,50 41,59 50,50" fill="#00B4FF"/>
+            </svg>
+          </div>
+          <div class="coords-bar small">
+            <svg class="star-coords" viewBox="0 0 40 40">
+              <path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#FFFFFF"/>
+            </svg>
+            <span>7°04'44.4"N 73°07'27.3"W</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cyan-full-line"></div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num-row">
+            <span>01</span>
+            <span class="cyan-bar"></span>
+          </div>
+          <div class="pillar-bracket-icon">
+            <svg viewBox="0 0 64 52" fill="none">
+              <path d="M12 4H4V14M52 4H60V14M12 48H4V38M52 48H60V38" stroke="#00A8E8" stroke-width="2"/>
+              <path d="M32 10L41 25L37 38H27L23 25L32 10Z" stroke="#00A8E8" stroke-width="2"/>
+              <circle cx="32" cy="24" r="2.5" stroke="#00A8E8" stroke-width="1.8"/>
+              <line x1="32" y1="10" x2="32" y2="21" stroke="#00A8E8" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3>ILUSTRACIÓN</h3>
+          <p>Ideas, emociones y mundos que toman forma en imágenes</p>
+        </div>
+
+        <div class="pillar-card with-borders">
+          <div class="pillar-num-row">
+            <span>02</span>
+            <span class="cyan-bar"></span>
+          </div>
+          <div class="pillar-bracket-icon">
+            <svg viewBox="0 0 64 52" fill="none">
+              <path d="M12 4H4V14M52 4H60V14M12 48H4V38M52 48H60V38" stroke="#00A8E8" stroke-width="2"/>
+              <rect x="18" y="13" width="28" height="26" stroke="#00A8E8" stroke-width="2"/>
+              <line x1="18" y1="20" x2="46" y2="20" stroke="#00A8E8" stroke-width="2"/>
+              <line x1="24" y1="13" x2="21" y2="20" stroke="#00A8E8" stroke-width="2"/>
+              <line x1="33" y1="13" x2="30" y2="20" stroke="#00A8E8" stroke-width="2"/>
+              <line x1="42" y1="13" x2="39" y2="20" stroke="#00A8E8" stroke-width="2"/>
+              <polygon points="29,25 38,30 29,35" stroke="#00A8E8" stroke-width="1.8"/>
+            </svg>
+          </div>
+          <h3>AUDIOVISUAL</h3>
+          <p>Historias que se mueven, se escuchan y se sienten</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num-row">
+            <span>03</span>
+            <span class="cyan-bar"></span>
+          </div>
+          <div class="pillar-bracket-icon">
+            <svg viewBox="0 0 64 52" fill="none">
+              <path d="M12 4H4V14M52 4H60V14M12 48H4V38M52 48H60V38" stroke="#00A8E8" stroke-width="2"/>
+              <polygon points="32,10 36,26 32,26" fill="#FFFFFF"/>
+              <polygon points="32,10 28,26 32,26" fill="#00A8E8"/>
+              <polygon points="48,26 32,30 32,26" fill="#00A8E8"/>
+              <polygon points="48,26 32,22 32,26" fill="#FFFFFF"/>
+              <polygon points="32,42 28,26 32,26" fill="#FFFFFF"/>
+              <polygon points="32,42 36,26 32,26" fill="#00A8E8"/>
+              <polygon points="16,26 32,22 32,26" fill="#00A8E8"/>
+              <polygon points="16,26 32,30 32,26" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <h3>EXPLORACIÓN</h3>
+          <p>Siempre buscando nuevas formas de ver y crear</p>
+        </div>
+      </div>
+
+      <div class="about-footer-bar">
+        <div class="brand-mini">
+          <svg class="star-icon small" viewBox="0 0 40 40">
+            <path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#FFFFFF"/>
+          </svg>
+          <span>HO<span class="letter-e small"><span></span><span></span><span></span></span>NN</span>
+        </div>
+        <span class="white-mid-line"></span>
+        <span class="motto-text">EL ARTE HABLA POR SI SOLO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 04: CONTACTO & FOOTER -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="contact-top-rule">
+        <span class="cyan-line-long"></span>
+        <svg class="star-dark-cyan" viewBox="0 0 40 40">
+          <path d="M20 0L24.2 15.8L40 20L24.2 24.2L20 40L15.8 24.2L0 20L15.8 15.8L20 0Z" fill="#0A3A54"/>
+        </svg>
+      </div>
+
+      <div class="contact-main-grid">
+        <div class="contact-left">
+          <div class="section-index">
+            <span class="idx-num">01</span>
+            <span class="idx-line"></span>
+          </div>
+
+          <h2 class="contact-headline">
+            ¿CREAMOS ALGO<br />
+            <span class="cyan-highlight">JUNTOS?</span>
+          </h2>
+
+          <p class="contact-sub">Toda gran idea empieza con una conversación</p>
+
+          <button class="btn-cyber btn-talk" id="openContactModalBtn">
+            <span>HABLEMOS</span>
+            <span class="arrow">→</span>
+          </button>
+
+          <div class="contact-socials-row">
+            <a href="mailto:moisesmerchan25@gmail.com" class="social-mail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00A8E8" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="1"/>
+                <path d="M3 7L12 13L21 7"/>
+              </svg>
+              <span>CORREO</span>
+            </a>
+
+            <span class="dot-sep">•</span>
+
+            <div class="social-icons">
+              <a href="https://www.instagram.com/thinkaboutmois/" aria-label="Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#00A8E8" stroke-width="1.8">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="#00A8E8"/>
+                </svg>
+              </a>
+              <a href="https://youtube.com/@moisesmerchan4396?si=RDoh-CoMkSsWrtNu" aria-label="YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="#00A8E8">
+                  <path d="M22.5 6.8a2.8 2.8 0 0 0-2-2C18.8 4.3 12 4.3 12 4.3s-6.8 0-8.5.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 5.2 2.8 2.8 0 0 0 2 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-5.2zM9.8 15.3V8.7L15.5 12l-5.7 3.3z"/>
+                </svg>
+              </a>
+              <a href="https://discord.com/users/730970881597112391" aria-label="Discord" title="Discord">
+                <svg viewBox="0 0 24 24" fill="#00A8E8">
+                  <path d="M19.5 5.3A16.5 16.5 0 0 0 15.4 4l-.5 1a15 15 0 0 0-5.8 0l-.5-1a16.5 16.5 0 0 0-4.1 1.3C1.9 9.2 1.2 13 1.5 16.7a16.7 16.7 0 0 0 5 2.5l1.1-1.7a10.7 10.7 0 0 1-1.7-.8l.4-.3a11.8 11.8 0 0 0 11.4 0l.4.3a10.7 10.7 0 0 1-1.7.8l1.1 1.7a16.7 16.7 0 0 0 5-2.5c.4-4.3-.7-8-3-11.4zM8.5 14.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2z"/>
+                </svg>
+              </a>
+              <a href="https://www.behance.net/moiseshasbon" aria-label="X" title="X">
+                <svg viewBox="0 0 24 24" fill="#00A8E8">
+                  <path d="M18.2 3H21l-6.2 7.1L22 21h-5.7l-4.5-5.8L6.7 21H3.9l6.6-7.6L3.6 3h5.8l4 5.3L18.2 3zm-1 16.2h1.6L8.4 4.7H6.7l10.5 14.5z"/>
+                </svg>
+              </a>
+            </div>
+
+            <span class="socials-caption">REDES SOCIALES</span>
+          </div>
+        </div>
+
+        <div class="contact-art-box">
+          <img src="assets/contacto-arte.webp" alt="Cielo nocturno y océano" />
+        </div>
+
+        <div class="contact-right-motto">
+          <p>
+            I D E A S<br />
+            Q U E<br />
+            C O B R A N<br />
+            V I D A
+          </p>
+          <span class="cyan-bar"></span>
+        </div>
+      </div>
+
+      <div class="cyan-full-line bright"></div>
+
+      <footer class="main-footer">
+        <div class="footer-brand-group">
+          <div class="footer-brand-group">
+      <img src="assets/logo-footer.webp" alt="Logo HOENN" class="crest-emblem" />
+      <span class="brand-text large">HO<span class="letter-e"><span></span><span></span><span></span></span>NN</span>
+    </div>
+           <span class="footer-white-line"></span>
+
+        <div class="footer-disciplines">
+          ILUSTRACIÓN &nbsp;/&nbsp; VIDEO &nbsp;/&nbsp; DIRECCION VISUAL
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- MODAL INTERACTIVO -->
+  <div class="cyber-modal" id="cyberModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
